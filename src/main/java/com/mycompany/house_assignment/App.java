@@ -61,6 +61,7 @@ public class App extends Application {
           Rectangle leftDoor = new Rectangle (215, 312, 64, 200); 
                         leftDoor.setFill(Color.WHITE);
                         leftDoor.setStroke(Color.BLACK);
+                        leftDoor.onMouseClickedProperty();
                         
          //rightdoor
           Rectangle rightDoor = new Rectangle (463, 312, 64, 200); 
@@ -69,7 +70,6 @@ public class App extends Application {
                         
                         
             //maindoor
-             //rightdoor
           Rectangle mainDoor = new Rectangle (341, 280, 64, 250); 
                         mainDoor.setFill(Color.WHITE);
                         mainDoor.setStroke(Color.BLACK);
@@ -187,12 +187,7 @@ public class App extends Application {
             gp.getChildren().add(openDoor);
             
         }
-      
        
-           
-       
-        
-        
         Scene scene = new Scene(gp, 740, 680);
         stage.setScene(scene);
         stage.show();
